@@ -3,15 +3,9 @@ const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv").config();
 const bcrypt = require("bcrypt");
 
-<<<<<<< HEAD:backend/routers/controllers/auth/login.js
 const Login = (req, res) => {
   const email = req.body.email.tolowercase();
   const password = req.body.password;
-=======
-const Login=(req,res)=>{
-    const email=req.body.email.toLowerCase();
-    const password=req.body.password
->>>>>>> 2935c3a402c9e483f3fef1afe105a7534f2c1d8c:backend/routers/controllers/auth/loginController.js
 
   loginModel
     .findOne({ email: email })
