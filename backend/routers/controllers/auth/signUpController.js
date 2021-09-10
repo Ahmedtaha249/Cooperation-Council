@@ -22,7 +22,7 @@ const createNewUser = (req, res) => {
       res.json("server error");
     });
 };
-
+ // /
 const getUsers = (req, res) => {
   signModel
     .find({})
