@@ -17,33 +17,33 @@ select {
   text-align: center;
 }
 
-body {
+/* body {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-size: inherit;
   font-family: Impact;
-}
+} */
 
 .InputsHolder {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: fit-content;
-}
-input {
+} 
+/* input {
   font-family: Impact;
   border: 0.5px 2px black;
   border-radius: 5%;
   margin: 2px;
-}
+}  */
 
-div {
+/* div {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px 1px black;
-}
+} */
 
 .description {
   display: flex;
@@ -52,7 +52,7 @@ div {
   border: 0.5px 2px black;
   width: 300px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+} */
 
 .delete {
   background-color: red;
@@ -64,7 +64,7 @@ div {
 .cancel {
   background-color: rgb(194, 129, 76);
 }
-
+/* 
 button {
   width: 400px;
   height: 50px;
@@ -74,7 +74,7 @@ button {
   border-radius: 5px;
   background-color: #021110;
   font-family: Impact;
-}
+} */
 
 .dateInput {
   width: 400px;
@@ -84,4 +84,4 @@ button {
   border-radius: 5px;
   font-family: Impact;
   
-}
+} 

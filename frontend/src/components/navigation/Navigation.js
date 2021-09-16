@@ -10,7 +10,7 @@ const Navigation = () => {
     <div>
       {!user.token ? (
         <div className="nav">
-          <label className="logo"> traveleo</label>
+          <label className="logo"> <span className="span_1">tra</span><span className="span_2">vel</span><span className="span_3">eo</span></label>
           <Link to={`${url}/about`} className="about">
             About
           </Link>
@@ -26,9 +26,10 @@ const Navigation = () => {
         </div>
       ) : (
         <div className="nav">
-          <Link to={`${url}/home`}>home</Link>
-          <Link to={`${url}/Table`}>Table</Link>
-          <Link to={`${url}/Update`}>update</Link>
+             <label className="logo">  <span className="span_1">tra</span><span className="span_2">vel</span><span className="span_3">eo</span></label>
+          <Link to={`${url}/home`} className="nav-home">home</Link>
+          <Link to={`${url}/Table`} className="nav-table">Table</Link>
+          <Link to={`${url}/Update`} className="nav-update">update</Link>
         </div>
       )}
     </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useHistory, useRouteMatch } from "react-router-dom";
 import axios from "axios";
-import "../Home/Home.css";
+import "../home/Home.css";
 export const Home = ({ setvalue }) => {
   const destenations = [
     "San_Francisco",

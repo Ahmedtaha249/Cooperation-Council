@@ -15,10 +15,11 @@ const Login = () => {
   const [err, setErr] = useState();
   return (
     <div className="login">
-      <h2>login</h2>
+      <h2 className="header-login">login</h2>
       <input
         type="email"
         placeholder="email here"
+        className="email-login"
         onChange={(e) => {
           setEmail(e.target.value);
         }}
@@ -26,11 +27,13 @@ const Login = () => {
       <input
         type="password"
         placeholder="password here"
+        className="password-login"
         onChange={(e) => {
           setPassword(e.target.value);
         }}
       />
       <button
+      className="btn-login"
         onClick={() => {
           axios
             .post("http://localhost:5000/login", { email, password })

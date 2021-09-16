@@ -16,9 +16,11 @@ const SignUp = () => {
     <>
       {!show ? (
         <div className="signUp">
+          <h2 className="header-name">Signup</h2>
           <input
             type="text"
             placeholder="firstName"
+            className="firstName"
             onChange={(e) => {
               setFirstName(e.target.value);
             }}
@@ -26,6 +28,7 @@ const SignUp = () => {
           <input
             type="text"
             placeholder="lastName"
+            className="lastName"
             onChange={(e) => {
               setLastName(e.target.value);
             }}
@@ -34,6 +37,7 @@ const SignUp = () => {
           <input
             type="number"
             placeholder="phoneNumber"
+            className="phoneNumber"
             onChange={(e) => {
               setPhoneNumber(e.target.value);
             }}
@@ -41,6 +45,7 @@ const SignUp = () => {
           <input
             type="email"
             placeholder="email"
+            className="email"
             onChange={(e) => {
               setEmail(e.target.value);
             }}
@@ -48,11 +53,13 @@ const SignUp = () => {
           <input
             type="password"
             placeholder="password"
+            className="passw"
             onChange={(e) => {
               setPassword(e.target.value);
             }}
           />
           <button
+              className="btn-sign"
             onClick={() => {
               axios
                 .post("http://localhost:5000/signUp", {

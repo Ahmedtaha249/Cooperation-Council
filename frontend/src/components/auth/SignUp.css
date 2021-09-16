@@ -4,12 +4,37 @@
     gap:10px;
     width:40%;
     margin-left: 30%;
-    margin-top: 5px;
+    margin-top: 25px;
    
   }
-  .signUp button{
-    background-color: goldenrod;
+  .header-name{
+    font-weight: bold;
   }
-  
-  
+ .firstName{
+  padding: 5px;
+  font-weight: bold;
+ }
+  .lastName{
+    padding: 5px;
+    font-weight: bold;
+  }
+  .phoneNumber{
+    padding: 5px;
+    font-weight: bold;
+  }
+  .email{
+    padding: 5px;
+    font-weight: bold;
+  }
+  .passw{
+    padding: 5px;
+    font-weight: bold;
+  }
+  .btn-sign{
+    padding: 5px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #150050 ;
+    border-radius:4px;
+  }
   

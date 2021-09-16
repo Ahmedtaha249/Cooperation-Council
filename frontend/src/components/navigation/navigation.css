@@ -1,8 +1,14 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .nav{
     background-color:#150050;
-   
+  
     padding:14px;
-    
     
   }
  .link{
@@ -18,19 +24,31 @@
   color:#ffffff;
   text-decoration: none;
   float: right;
-  padding-right: 10px;
+  padding-right: 14px;
+  padding-top: 3px;
+  font-weight: bold;
+}
+.span_1{
+  color: rgb(19,145,210);
+}
+.span_2{
+  color: rgb(252,158,21);
+}
+.span_3{
+  color: rgb(227,64,61)
 }
 .sign{
   margin-left:7px;
   color:#ffffff;
   text-decoration: none;
   float: right;
-  padding-right: 10px;
-  
+  padding-right: 14px;
+  padding-top: 3px;
+  font-weight: bold;
 }
 .logo{
   
-  color:#ffffff;
+ font-size: 20px;
   padding-right:950px;
  
   
@@ -40,13 +58,40 @@
   color:#ffffff;
   text-decoration: none;
   float: right;
-  padding-right: 10px;
+  padding-right: 20px;
+  padding-top: 3px;
+  font-weight: bold;
 }
 .contac{
   color:#ffffff;
   text-decoration: none;
   float: right;
-  padding-right: 10px;
+  padding-right: 14px;
+  padding-top: 3px;
+  font-weight: bold;
   
 }
-
+.nav-home{
+  color:#ffffff;
+  text-decoration: none;
+  float: right;
+  padding-right: 14px;
+  padding-top: 3px;
+  font-weight: bold;
+}
+.nav-table{
+  color:#ffffff;
+  text-decoration: none;
+  float: right;
+  padding-right: 15px;
+  padding-top: 3px;
+  font-weight: bold;
+}
+.nav-update{
+  color:#ffffff;
+  text-decoration: none;
+  float: right;
+  padding-right: 15px;
+  padding-top: 3px;
+  font-weight: bold;
+} 
