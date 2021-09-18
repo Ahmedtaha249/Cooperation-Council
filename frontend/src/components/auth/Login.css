@@ -1,62 +1,53 @@
-.login{
-
-    position: relative;
-    top: 0vh;
-    margin: auto;
-    width: 30rem;
-    height: 16rem;
-    background-color:#fff;
-    padding: 1rem;
-    border-radius: 14px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    z-index: 30;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
- 
-  
-    
-
-  }
-  .close_x_login{
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding-left: 29rem;
-  }
-  .header-login{
-font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: rgb(19,145,210);
-  }
-  .email-login{
+.login {
+  position: relative;
+  top: 0vh;
+  margin: auto;
+  width: 30rem;
+  height: 16rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.close_x_login {
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding-left: 29rem;
+}
+.header-login {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(19, 145, 210);
+}
+.email-login {
   font-weight: bold;
   padding: 5px;
-  }
-  .password-login{
-    font-weight: bold;
-    padding: 5px;
-  }
- .btn-login{
+}
+.password-login {
+  font-weight: bold;
   padding: 5px;
-    font-weight: bold;
-    color: #fff;
-    background-color: rgb(227,64,61);
-    border-radius:4px;
- }
- .btn-login:hover{
-   cursor: pointer;
- }
- .back_div{
+}
+.btn-login {
+  padding: 5px;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgb(227, 64, 61);
+  border-radius: 4px;
+}
+.btn-login:hover {
+  cursor: pointer;
+}
+.back_div {
   position: fixed;
- 
+
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   z-index: 20;
   background-color: rgba(0, 0, 0, 0.75);
- 
- }
- 
-
-  
+}

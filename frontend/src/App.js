@@ -16,7 +16,6 @@ import Contact from "./components/contact/Contact";
 import SideBar from "./components/sidebar";
 import { MyBooking } from "./components/myBooking/MyBooking";
 
-
 export const userSign = createContext();
 
 export const userContext = createContext();

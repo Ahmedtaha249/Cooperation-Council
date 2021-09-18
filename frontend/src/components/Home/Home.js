@@ -38,7 +38,6 @@ const Home = ({ setvalue, setadult }) => {
   };
 
   const click = () => {
-
     axios
       .post("http://localhost:5000/flights/search/", {
         origin: converter[origin],
@@ -51,15 +50,13 @@ const Home = ({ setvalue, setadult }) => {
         const flights = result.data.flights;
         const handledFlights = flights.map((item) => {
           return {
-
-            bookingId:item._id,
+            bookingId: item._id,
 
             destination: deConverter[item.destination],
             origin: deConverter[item.origin],
             date: item.date,
             capacity: item.capacity,
             totalPrice: item.price * adults,
-  
           };
         });
 
@@ -154,8 +151,6 @@ const Home = ({ setvalue, setadult }) => {
           </button>
         </div>
       </div>
-
- 
     </div>
   );
 };
