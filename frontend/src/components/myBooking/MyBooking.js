@@ -63,17 +63,17 @@ export const MyBooking = ({ book, state }) => {
       {myBook &&
         myBook.flights.map((element) => {
           return (
-            <div>
+            <div className="parent">
               <div className="card">
                 <div className="image"></div>
                 <div className="text">
-                  <span className="date">Your Book</span><br/><br/>
+                  <span className="date">Your Book</span><br/>
                   <h2 className="date">Date:{element.flightId.date}</h2><br/>
 
                   <h2>Destination: {element.flightId.destination}</h2><br/>
-                  <p>Enter The Number Of New Adults</p><br/>
-                  <input type="number" onChange={updateAduluts} />
-                  <br></br>
+                  <p>Enter The Number Of New Adults</p>
+                  <input type="number" onChange={updateAduluts} /><br/>
+                  
                   {results && <p>{results}</p>}
                   <button className="btn1" onClick={() => updated(element._id)}>
                     Update
@@ -81,7 +81,7 @@ export const MyBooking = ({ book, state }) => {
                   <button className="btn1" onClick={() => deleted(element._id)}>
                     Delete
                   </button>
-                </div>
+                </div><br/><br/>
                 <div className="status">
                   <div className="stat">
                     <div className="value">First Name</div>
@@ -97,7 +97,7 @@ export const MyBooking = ({ book, state }) => {
                   </div>
                 </div>
               </div>
-              <br/><br/><br/><br/>
+              
             </div>
           );
         })}
