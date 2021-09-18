@@ -119,8 +119,8 @@ function Cities() {
             <img
               src="https://cdn.pixabay.com/photo/2017/12/15/13/51/polynesia-3021072_960_720.jpg"
               alt="Pulpit rock"
-              width="284"
-              height="213"
+              width="100%"
+              height="100%"
             />
             <p className="caption" style={{ color: "#143B6B" }}>
               More Destinations
@@ -131,8 +131,8 @@ function Cities() {
             <img
               src="https://cdn.pixabay.com/photo/2016/02/19/11/48/box-1209969_960_720.jpg"
               alt="Monterosso al Mare"
-              width="284"
-              height="213"
+              width="100%"
+              height="100%"
             />
             <p className="caption" style={{ color: "#143B6B" }}>
               More Memories
@@ -140,12 +140,12 @@ function Cities() {
           </div>
         </div>
 
-        <p style={{ fontSize: "5vw", fontFamily: "Arial" }}>
+        <p style={{ fontSize: "3vw", fontFamily: "Arial" }}>
           Expl{" "}
           <FaSearchLocation
             style={{ fontSize: "7vw", color: "rgb(19,145,210)" }}
           />{" "}
-          re Memories With{" "}
+          re Memories{" "}
         </p>
         <div className="cities_logo">
           <p style={{ fontSize: "5vw" }}>
@@ -154,7 +154,7 @@ function Cities() {
             <GiPlanePilot style={{ fontSize: "200%", color: "white" }} />
             <span style={{ color: "rgb(227,64,61)" }}>eo</span>
           </p>
-          <div className='cities_logo_book'>
+          <div className="cities_logo_book">
             <Link style={{ fontSize: "150%", color: "white" }} to={`/login`}>
               {" "}
               BOOK HERE !{" "}
