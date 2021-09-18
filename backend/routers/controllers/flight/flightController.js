@@ -10,7 +10,6 @@ const createNewFlight = (req, res) => {
   newFlight
     .save()
     .then((result) => {
-      console.log(result);
 
       res.status(201).json({ success: true, message: "new flight  created" });
     })
@@ -86,7 +85,6 @@ const updateFlightCapacity = (req, res, next) => {
 
 const getAvailableFlights = (req, res, next) => {
   const { origin, destination, dateFrom, adults, dateTo } = req.body;
-  console.log({ origin, destination, dateFrom, adults, dateTo });
 
   flightModel
     .find({

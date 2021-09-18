@@ -55,7 +55,6 @@ function Table({ value, state, adult, setBook }) {
           text: `you want to book on:\r ${selectedRows.map(
             (r) => r.destination
           )}?`,
-          // eslint-disable-next-line no-dupe-keys
 
           icon: "warning",
 

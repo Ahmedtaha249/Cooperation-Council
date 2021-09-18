@@ -8,8 +8,6 @@ import { WiThermometer } from "weather-icons-react";
 import { FaMapPin } from "react-icons/fa";
 import { GiPlanePilot } from "react-icons/gi";
 
-//new
-
 function Weather() {
   const [icon, setIcon] = useState();
   const [description, setDescription] = useState("");
@@ -38,9 +36,7 @@ function Weather() {
   }
 
   const changeHandler = (e) => {
-    // .get(
-    //   `http://api.weatherbit.io/v2.0/current?&city=${e.target.value}&key=5a29c29a396441bfa77f13c5e4b922f8&include=minutely&lang=en`
-    // )
+
     axios
       .get(
         `http://api.openweathermap.org/data/2.5/weather?q=${e.target.value}&appid=fe5020d8dbf399a7c40ed4cd37fb5c74&lang=en`
