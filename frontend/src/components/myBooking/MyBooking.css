@@ -1,8 +1,9 @@
 .card {
-  width: 37.5vw;
+  width: 25%;
   display: grid;
-  grid-template-columns: 80vh;
-  grid-template-rows: 25vw 22vw 5vw;
+  row-gap: 5vh;
+  grid-template-columns: 100%;
+  grid-template-rows: 30vh 30vh 15vh;
   grid-template-areas: "image" "text" "stats";
   border-radius: 15px;
   background: white;
@@ -10,6 +11,8 @@
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin: auto !important;
+  margin-bottom: 20vh!important;
+  height: 85vh;
 }
 .image {
   grid-area: image;
@@ -79,4 +82,7 @@
 }
 .type {
   font-size: 30px;
+}
+.parent{
+  height: 90vh !important;
 }
