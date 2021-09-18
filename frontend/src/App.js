@@ -3,12 +3,11 @@ import Home from "./components/home/Home";
 import Table from "./components/ui/table";
 import Login from "./components/auth/Login";
 import SignUp from "./components/auth/SignUp";
-import logOut from "./components/logout/logOut"
+import logOut from "./components/logout/logOut";
 import Navigation from "../src/components/navigation/Navigation";
 import About from "./components/about/About";
 import "./App.css";
 import { Route, useRouteMatch, Switch } from "react-router-dom";
-import Weather from "../src/components/ui/weather";
 import Attractions from "../src/components/ui/attractions";
 import Cities from "../src/components/ui/cities";
 import Footer from "../src/components/footer/footer";
@@ -24,7 +23,7 @@ export const userContext = createContext();
 const App = () => {
   const [adult, setAdult] = useState();
   const [flights, setflights] = useState();
-  let { path, url } = useRouteMatch();
+  let { path } = useRouteMatch();
   const [token, setToken] = useState();
   const state = { token, setToken };
   const [email, setEmail] = useState("");
@@ -34,7 +33,7 @@ const App = () => {
     <div className="App-s">
       <div className="App">
         <Route
-          path={`${path}/myBooking`}
+          path={`/myBooking`}
           render={() => (
             <MyBooking
               flights={flights}
@@ -50,32 +49,29 @@ const App = () => {
 
             <div className="navPlus" />
             <Route
-              path={`${path}/Update`}
+              path={`/Update`}
               render={() => (
-                <UpdateFlightBooking value={flights} state={state} />
+                <UpdateFlightBooking value={flights} state={token} />
               )}
             />
-
 
             <userSign.Provider
               value={{ email, password, setEmail, setPassword }}
             >
-              <Route path={`${path}/signUp`} component={SignUp} />
-              <Route path={`${path}/login`} component={Login} />
+              <Route path={`/signUp`} component={SignUp} />
+              <Route path={`/login`} component={Login} />
 
-
-              <Route path={`${path}/logout` }component={logOut}/>
-
+              <Route path={`/logout`} component={logOut} />
             </userSign.Provider>
 
-            <Route path={`${path}/contact`} component={Contact} />
-            <Route path={`${path}/About`} component={About} />
+            <Route path={`/contact`} component={Contact} />
+            <Route path={`/about`} component={About} />
             <Route
-              path={`${path}/home`}
+              path={`/home`}
               render={() => <Home setvalue={setflights} setadult={setAdult} />}
             />
             <Route
-              path={`${path}/Table`}
+              path={`/Table`}
               render={() => (
                 <Table
                   value={flights}
@@ -86,14 +82,13 @@ const App = () => {
               )}
             />
             {/* <Route exact path={path} component={Weather}></Route> */}
-        <Route exact path={'/main'} component={Cities}></Route>
-        <Route exact path={'/main'} component={Attractions}></Route>
-        <Route exact path={'/main'} component={SideBar}></Route>
+            <Route exact path={"/"} component={Cities}></Route>
+            <Route exact path={"/"} component={Attractions}></Route>
+            <Route exact path={"/"} component={SideBar}></Route>
           </userContext.Provider>
         </Switch>
-        
-        <Footer/>
 
+        <Footer />
       </div>
     </div>
   );

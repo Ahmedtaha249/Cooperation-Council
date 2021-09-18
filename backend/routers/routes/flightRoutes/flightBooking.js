@@ -17,9 +17,12 @@ const {
 } = require("../../controllers/flight/flightController");
 
 flightBookingRouter.post("/", Authentication, isFlightFit, updateFlightCapacity, creatFlightBooking);
-flightBookingRouter.delete("/:bookingId", isBookingExist, updateFlightCapacity, deleteFlightBooking);
+
+
+flightBookingRouter.delete("/:bookingId", Authentication,isBookingExist, updateFlightCapacity, deleteFlightBooking);
 flightBookingRouter.get("/allBooking/", Authentication, getFlightsBookingByUserId);
 flightBookingRouter.get("/allBooking/a", Authentication, getAllFlightsBooking);
+
 flightBookingRouter.put("/:bookingId", Authentication, isBookingExist, isFlightFit, updateFlightCapacity, updateFlightBooking);
 
 module.exports = flightBookingRouter;

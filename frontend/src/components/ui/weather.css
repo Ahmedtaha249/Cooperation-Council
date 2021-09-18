@@ -2,7 +2,7 @@
   padding: 10px;
 
   position: absolute;
-  top: 282vh;
+  top: 270vh;
   right: 0px;
   overflow: hidden;
   height: 65vh;
@@ -19,7 +19,6 @@
   
   
 }
-/* new */
 .weather_select:hover {
   cursor: pointer;
 }

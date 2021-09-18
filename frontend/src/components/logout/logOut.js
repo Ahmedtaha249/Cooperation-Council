@@ -7,7 +7,7 @@ const LogOut = () => {
   const backUser = useContext(userContext);
   localStorage.clear();
   backUser.setToken("");
-  history.push("/main/login");
+  history.push("/login");
   return <div></div>;
 };
 export default LogOut;

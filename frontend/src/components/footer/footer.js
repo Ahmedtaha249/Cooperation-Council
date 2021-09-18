@@ -29,9 +29,7 @@ const Footer = () => {
       <div className="footer_links">
         <ul>
           <li>
-             <Link to={`${url}/contact`} >
-            Contact Us
-          </Link>
+            <Link to={`/contact`}>Contact Us</Link>
           </li>
           <li>
             <a href="#">Jobs</a>

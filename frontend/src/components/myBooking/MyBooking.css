@@ -1,8 +1,8 @@
 .card {
-    width: 37.5vw;
+  width: 37.5vw;
   display: grid;
   grid-template-columns: 80vh;
-  grid-template-rows: 25vw 15vw 5vw;
+  grid-template-rows: 25vw 22vw 5vw;
   grid-template-areas: "image" "text" "stats";
   border-radius: 15px;
   background: white;
@@ -21,26 +21,36 @@
 .text {
   grid-area: text;
   margin: 25px;
-  
 }
 .text .date {
   color: rgb(2, 0, 1);
   font-size: 20px;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .text h2 {
   color: grey;
   font-size: 20px;
   font-weight: 300;
 }
-.btn1{
-    margin-top:35px;
-    width: 100px;
-    height: 30px;
-    background-color: rgb(2, 36, 59);
-    border-radius: 5px;
-    color: #f7f7f7;
+.btn1 {
+  margin-top: 35px;
+  width: 100px;
+  height: 30px;
+  background-color: rgb(2, 36, 59);
+  border-radius: 5px;
+  color: #f7f7f7;
 }
+.btn2{
+  
+  margin-top: 35px;
+  width: 200px;
+  height: 50px;
+  background-color: rgb(2, 36, 59);
+  border-radius: 5px;
+  color: #f7f7f7;
+  font-size: 20px;
+}
+
 .status {
   grid-area: stats;
   display: grid;
@@ -48,7 +58,7 @@
   grid-template-rows: 1fr;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background:#F57941;
+  background: #f57941;
 }
 .status .stat {
   display: flex;
@@ -67,6 +77,6 @@
   cursor: pointer;
   margin: 30px;
 }
-.type{
-    font-size: 30px;
+.type {
+  font-size: 30px;
 }

@@ -77,10 +77,10 @@ function Weather() {
         })}
       </select>
       <div className="weather_details">
-        <p>
+        <p style={{ color: "black" }}>
           {name} <FaMapPin />
         </p>
-        <h1>{description}</h1>
+        <h1 style={{ color: "black" }}>{description}</h1>
 
         <div className="weather_img">
           {description && (
