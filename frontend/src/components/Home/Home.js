@@ -38,13 +38,6 @@ const Home = ({ setvalue, setadult }) => {
   };
 
   const click = () => {
-    // console.log("hello", {
-    //   origin: converter[origin],
-    //   destination: converter[destination],
-    //   dateFrom,
-    //   adults,
-    //   dateTo,
-    // });
 
     axios
       .post("http://localhost:5000/flights/search/", {
