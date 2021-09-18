@@ -5,11 +5,7 @@ const About=()=>{
  return(
      <div className="About">
          <div className="part_1">
-         {/* <h1 style={{ fontSize: "20px" }}>
-        <span style={{ color: "rgb(19,145,210)" }}>tre</span>
-        <span style={{ color: "rgb(252,158,21)" }}>val</span>
-        <span style={{ color: "rgb(227,64,61)" }}>eo</span>
-      </h1>
+
  */}
 
 
