@@ -28,7 +28,6 @@ const Modal =()=>{
             <div className="modal-footer">
              <button onClick={()=>{
             
-            // console.log("ahmed",url)
              history.push(`/main/login`)
             
              }}   className="btn-cancel">Close</button>
