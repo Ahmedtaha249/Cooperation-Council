@@ -6,7 +6,6 @@ const About=()=>{
      <div className="About">
          <div className="part_1">
 
- */}
 
 
 
