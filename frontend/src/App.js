@@ -80,7 +80,6 @@ const App = () => {
                 /> //
               )}
             />
-            {/* <Route exact path={path} component={Weather}></Route> */}
             <Route exact path={"/"} component={Cities}></Route>
             <Route exact path={"/"} component={Attractions}></Route>
             <Route exact path={"/"} component={SideBar}></Route>
