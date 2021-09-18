@@ -1,3 +1,8 @@
+.myBook_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .card {
   width: 25%;
   display: grid;
@@ -11,7 +16,7 @@
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin: auto !important;
-  margin-bottom: 20vh!important;
+  margin-bottom: 20vh !important;
   height: 85vh;
 }
 .image {
@@ -43,8 +48,8 @@
   border-radius: 5px;
   color: #f7f7f7;
 }
-.btn2{
-  
+.btn2 {
+  align-self: center !important;
   margin-top: 35px;
   width: 200px;
   height: 50px;
@@ -52,6 +57,7 @@
   border-radius: 5px;
   color: #f7f7f7;
   font-size: 20px;
+  margin-bottom: 180px;
 }
 
 .status {
@@ -83,6 +89,6 @@
 .type {
   font-size: 30px;
 }
-.parent{
+.parent {
   height: 90vh !important;
 }

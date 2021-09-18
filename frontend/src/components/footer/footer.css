@@ -3,6 +3,7 @@
   margin: auto !important;
   position: relative !important;
   bottom: 0 !important;
+  /* width: 100% !important; */
   margin: 0px auto;
   min-width: 90%;
   max-width: 90%;
@@ -40,4 +41,8 @@ a {
   text-align: center;
   justify-content: center;
   padding-top: 5%;
+}
+
+.footer_div a:visited {
+  color: white !important;
 }
