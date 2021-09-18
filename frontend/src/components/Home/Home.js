@@ -72,7 +72,7 @@ const Home = ({ setvalue, setadult }) => {
     <div className="homeBody">
       <div className="smallBody">
         <h1 style={{ fontSize: "20px" }}>
-          <span style={{ color: "rgb(0,0,0)" }}>
+          <span style={{ color: "rgb(0,0,0)" ,fontSize: "25px"}}>
             Just pick up your trip with{" "}
           </span>
           <span style={{ color: "rgb(19,145,210)" }}>Tra</span>
