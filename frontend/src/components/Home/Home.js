@@ -72,13 +72,13 @@ const Home = ({ setvalue, setadult }) => {
     <div className="homeBody">
       <div className="smallBody">
         <h1 style={{ fontSize: "20px" }}>
-          <span style={{ color: "rgb(0,0,0)" }}>
+          <span style={{ color: "rgb(0,0,0)" ,fontSize: "25px"}}>
             Just pick up your trip with{" "}
           </span>
-          <span style={{ color: "rgb(19,145,210)" }}>Tra</span>
-          <span style={{ color: "rgb(252,158,21)" }}>val</span>
-          <GiPlanePilot style={{ fontSize: "3vw" }} />
-          <span style={{ color: "rgb(227,64,61)" }}>eo</span>
+          <span style={{ color: "rgb(19,145,210)",fontSize: "35px" }}>Tra</span>
+          <span style={{ color: "rgb(252,158,21)" ,fontSize: "35px" }}>val</span>
+          <GiPlanePilot style={{ fontSize: "3vw",fontSize: "35px"  }} />
+          <span style={{ color: "rgb(227,64,61)" ,fontSize: "35px" }}>eo</span>
         </h1>
 
         <div className="homeDiv">
@@ -125,7 +125,7 @@ const Home = ({ setvalue, setadult }) => {
               setAdults(w.target.value);
             }}
           />
-          <h1>from</h1>
+          <h1>available from</h1>
           <input
             className="homeInput"
             className="dateInput"
@@ -137,7 +137,7 @@ const Home = ({ setvalue, setadult }) => {
               setDateFrom(e.target.value);
             }}
           />
-          <h1>to</h1>
+          <h1>available to</h1>
           <input
             className="dateInput"
             defaultValue="2021-12-31"
