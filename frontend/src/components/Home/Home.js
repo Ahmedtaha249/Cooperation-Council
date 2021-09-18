@@ -155,10 +155,7 @@ const Home = ({ setvalue, setadult }) => {
         </div>
       </div>
 
-      {/* <img
-        className="backImg"
-        src="https://cdn.pixabay.com/photo/2018/09/25/17/14/airplane-3702676_960_720.jpg"
-      ></img> */}
+ 
     </div>
   );
 };
