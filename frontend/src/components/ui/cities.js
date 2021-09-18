@@ -154,14 +154,16 @@ function Cities() {
             <GiPlanePilot style={{ fontSize: "200%", color: "white" }} />
             <span style={{ color: "rgb(227,64,61)" }}>eo</span>
           </p>
-          <Link style={{ fontSize: "150%", color: "white" }} to={`/login`}>
-            {" "}
-            BOOK HERE !{" "}
-            <FaPlaneDeparture
-              className="cities_book_logo"
-              style={{ fontSize: "5vw", color: "rgb(19,145,210)" }}
-            />{" "}
-          </Link>
+          <div className='cities_logo_book'>
+            <Link style={{ fontSize: "150%", color: "white" }} to={`/login`}>
+              {" "}
+              BOOK HERE !{" "}
+              <FaPlaneDeparture
+                className="cities_book_logo"
+                style={{ fontSize: "5vw", color: "rgb(19,145,210)" }}
+              />{" "}
+            </Link>
+          </div>
         </div>
         <div
           style={{

@@ -74,12 +74,18 @@ div.left_rot {
   column: #c2daec !important;
   font-family: Arial, Helvetica, sans-serif !important;
 }
+.cities_logo_book {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
 .cities_book_logo {
   color: rgb(19, 145, 210);
   animation-name: book_logo;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   cursor: pointer;
+  vertical-align: middle;
 }
 @keyframes book_logo {
   0% {
