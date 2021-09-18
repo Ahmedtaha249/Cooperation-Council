@@ -125,7 +125,7 @@ const Home = ({ setvalue, setadult }) => {
               setAdults(w.target.value);
             }}
           />
-          <h1>from</h1>
+          <h1>available from</h1>
           <input
             className="homeInput"
             className="dateInput"
@@ -137,7 +137,7 @@ const Home = ({ setvalue, setadult }) => {
               setDateFrom(e.target.value);
             }}
           />
-          <h1>to</h1>
+          <h1>available to</h1>
           <input
             className="dateInput"
             defaultValue="2021-12-31"
