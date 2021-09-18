@@ -28,7 +28,6 @@ const Modal =()=>{
             <div className="modal-footer">
              <button onClick={()=>{
             
-            // console.log(path)
             // console.log("ahmed",url)
              history.push(`/main/login`)
             
