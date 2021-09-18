@@ -8,8 +8,6 @@ import { WiThermometer } from "weather-icons-react";
 import { FaMapPin } from "react-icons/fa";
 import { GiPlanePilot } from "react-icons/gi";
 
-//new
-
 function Weather() {
   const [icon, setIcon] = useState();
   const [description, setDescription] = useState("");
