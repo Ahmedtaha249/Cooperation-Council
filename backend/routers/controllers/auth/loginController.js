@@ -22,7 +22,6 @@ const Login = (req, res) => {
           userId: result._id,
           email: result.email,
         };
-        console.log('payload',payload);
 
         const SECRET = process.env.SECRET;
         const options = {
