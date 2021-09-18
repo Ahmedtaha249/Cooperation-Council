@@ -11,7 +11,6 @@ const Login = (req, res) => {
     .findOne({ email: email })
     .then((result) => {
       if (!result) {
-        console.log("emailnotfound")
         res.json("email not found ");
       }
       const valid = bcrypt.compareSync(password, result.password);
