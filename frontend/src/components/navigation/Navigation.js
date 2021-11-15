@@ -14,13 +14,13 @@ import { AiOutlineHome } from "react-icons/ai";
 
 import { HiOutlineUserGroup } from "react-icons/hi";
 const Navigation = () => {
-  let {  url } = useRouteMatch();
+  let { url } = useRouteMatch();
   const user = useContext(userContext);
   return (
     <div className="nav_div">
       {!user.token ? (
         <div className="nav">
-          <label
+          <div
             style={{
               fontSize: "20px",
               textAlign: "center",
@@ -29,39 +29,73 @@ const Navigation = () => {
           >
             <span style={{ color: "rgb(19,145,210)" }}>Tre</span>
             <span style={{ color: "rgb(252,158,21)" }}>val</span>
+
             <GiPlanePilot style={{ fontSize: "3vw", color: "white" }} />
             <span style={{ color: "rgb(227,64,61)" }}>eo</span>
-          </label>
-          <Link to={`/about`} className="about">
-            <HiOutlineUserGroup
-              style={{ fontSize: "1.1vw", verticalAlign: "middle" }}
-            />
-            About
-          </Link>
-          <Link to={`/contact`} className="contac">
-            <MdContactPhone
-              style={{ fontSize: "1.1vw", verticalAlign: "middle" }}
-            />
-            Contact us
-          </Link>
-          <Link to={`/signUp`} className="sign">
-            <BiUserPlus
-              style={{ fontSize: "1.1vw", verticalAlign: "middle" }}
-            />
-            signUp
-          </Link>
-          <Link to={`/login`} className="log">
-            <CgLogIn style={{ fontSize: "1.1vw", verticalAlign: "middle" }} />
-            Login
-          </Link>
-          <Link to={`/`} className="main-nav">
-            <AiOutlineHome style={{ fontSize: "1.1vw" }} />
-            Main
-          </Link>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              verticalAlign: "middle",
+              columnGap: "5px",
+            }}
+          >
+            <Link to={`/about`} className="about">
+              <HiOutlineUserGroup
+                style={{
+                  fontSize: "1.1vw",
+                  verticalAlign: "middle",
+                  paddingRight: "3px",
+                }}
+              />
+              About
+            </Link>
+            <Link to={`/contact`} className="contac">
+              <MdContactPhone
+                style={{
+                  fontSize: "1.1vw",
+                  verticalAlign: "middle",
+                  paddingRight: "3px",
+                }}
+              />
+              Contact us
+            </Link>
+            <Link to={`/signUp`} className="sign">
+              <BiUserPlus
+                style={{
+                  fontSize: "1.1vw",
+                  verticalAlign: "middle",
+                  paddingRight: "3px",
+                }}
+              />
+              SignUp
+            </Link>
+            <Link to={`/login`} className="log">
+              <CgLogIn
+                style={{
+                  fontSize: "1.1vw",
+                  verticalAlign: "middle",
+                  paddingRight: "3px",
+                }}
+              />
+              Login
+            </Link>
+            <Link to={`/`} className="main-nav">
+              <AiOutlineHome
+                style={{
+                  fontSize: "1.1vw",
+                  verticalAlign: "middle",
+                  paddingRight: "3px",
+                }}
+              />
+              Main
+            </Link>
+          </div>
         </div>
       ) : (
         <div className="nav">
-          <label
+          <div
             style={{
               fontSize: "20px",
               textAlign: "center",
@@ -74,25 +108,48 @@ const Navigation = () => {
             <span style={{ color: "rgb(252,158,21)" }}>val</span>
             <GiPlanePilot style={{ fontSize: "3vw", color: "white" }} />
             <span style={{ color: "rgb(227,64,61)" }}>eo</span>
-          </label>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              verticalAlign: "middle",
+              columnGap: "10px",
+            }}
+          >
+            <Link to={`/logout`} className="logout_nav">
+              {" "}
+              <BiLogOut
+                style={{
+                  fontSize: "1.1vw",
+                  verticalAlign: "middle",
+                  paddingRight: "3px",
+                }}
+              />{" "}
+              LogOut
+            </Link>
+            <Link to={`/home`} className="home_nav">
+              <FaHome
+                style={{
+                  paddingRight: "3px",
 
-          <Link to={`/logout`} className="logout_nav">
-            {" "}
-            <BiLogOut
-              style={{ fontSize: "1.1vw", verticalAlign: "middle" }}
-            />{" "}
-            LogOut
-          </Link>
-          <Link to={`/home`} className="home_nav">
-            <FaHome style={{ fontSize: "1.1vw", verticalAlign: "middle" }} />
-            Home
-          </Link>
-          <Link to={`/myBooking`} className="myBooking_nav">
-            <ImAddressBook
-              style={{ fontSize: "1.1vw", verticalAlign: "middle" }}
-            />
-            Mybooking
-          </Link>
+                  fontSize: "1.1vw",
+                  verticalAlign: "middle",
+                }}
+              />
+              Home
+            </Link>
+            <Link to={`/myBooking`} className="myBooking_nav">
+              <ImAddressBook
+                style={{
+                  fontSize: "1.1vw",
+                  verticalAlign: "middle",
+                  paddingRight: "3px",
+                }}
+              />
+              My Booking
+            </Link>
+          </div>
         </div>
       )}
     </div>

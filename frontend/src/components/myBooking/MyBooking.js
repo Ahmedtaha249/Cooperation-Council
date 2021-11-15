@@ -6,7 +6,7 @@ import Payment from "../payment/Payment"
 export const MyBooking = ({ book, state }) => {
   const [adults, setAdults] = useState();
   const [results, setresults] = useState();
-  const [myBook, setMyBook] = useState();
+  const [myBook, setMyBook] = useState("");
   const click = () => {
     console.log(state);
 
@@ -57,9 +57,9 @@ export const MyBooking = ({ book, state }) => {
   console.log("myBook", myBook);
 
   return (
-    <div>
+    <div className="myBook_div">
       <button className="btn2" onClick={click}>
-        MyBooking
+        My Booking
       </button>
       {myBook &&
         myBook.flights.map((element) => {
@@ -68,13 +68,17 @@ export const MyBooking = ({ book, state }) => {
               <div className="card">
                 <div className="image"></div>
                 <div className="text">
-                  <span className="date">Your Book</span><br/>
-                  <h2 className="date">Date:{element.flightId.date}</h2><br/>
+                  <span className="date">Your Book</span>
+                  <br />
+                  <h2 className="date">Date:{element.flightId.date}</h2>
+                  <br />
 
-                  <h2>Destination: {element.flightId.destination}</h2><br/>
+                  <h2>Destination: {element.flightId.destination}</h2>
+                  <br />
                   <p>Enter The Number Of New Adults</p>
-                  <input type="number" onChange={updateAduluts} /><br/>
-                  
+                  <input type="number" onChange={updateAduluts} />
+                  <br />
+
                   {results && <p>{results}</p>}
                   <button className="btn1" onClick={() => updated(element._id)}>
                     Update
@@ -82,9 +86,15 @@ export const MyBooking = ({ book, state }) => {
                   <button className="btn1" onClick={() => deleted(element._id)}>
                     Delete
                   </button>
+
                   <Payment amount={element.flightId.price*element.adults}/>
                  
                 </div><br/><br/>
+
+                </div>
+                <br />
+                <br />
+
                 <div className="status">
                   <div className="stat">
                     <div className="value">First Name</div>
@@ -92,7 +102,9 @@ export const MyBooking = ({ book, state }) => {
                   </div>
                   <div className="stat">
                     <div className="value">TotalPrice</div>
-                    <div class="type">{element.flightId.price*element.adults}$</div>
+                    <div class="type">
+                      {element.flightId.price * element.adults}$
+                    </div>
                   </div>
                   <div className="stat">
                     <div className="value">Adults</div>
@@ -100,7 +112,6 @@ export const MyBooking = ({ book, state }) => {
                   </div>
                 </div>
               </div>
-              
             </div>
           );
         })}

@@ -1,42 +1,31 @@
-
 .nav_div {
   /* background-color: #150050; */
   background-color: rgb(17, 27, 51);
 
-  padding: 14px;
+  /* padding: 14px; */
   top: 0;
   left: 0;
 
--webkit-box-shadow: 0 0px 20px  black;
--moz-box-shadow: 0 0px 20px black;
- box-shadow: 0 0px 20px  black;
+  -webkit-box-shadow: 0 0px 20px black;
+  -moz-box-shadow: 0 0px 20px black;
+  box-shadow: 0 0px 20px black;
   width: 100%;
   position: absolute;
   font-size: 20px;
+  height: 10vh;
 }
-.nav{
+.nav {
   padding-right: 25px;
- 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* text-align: center; */
+  vertical-align: middle;
 }
-
 
 .log {
-  color: #ffffff;
-  text-decoration: none;
-  float: right;
-  padding-right: 12px;
-  font-size: 14px;
-  text-align: center;
-  justify-content: center;
-  line-height:50px;
- 
+  padding-top: 10px;
 
-}
-.log:hover{
-font-weight: bold;
-  color:#FF8882;
-}
-.sign {
   color: #ffffff;
   text-decoration: none;
   float: right;
@@ -44,15 +33,31 @@ font-weight: bold;
   font-size: 14px;
   text-align: center;
   justify-content: center;
-  line-height:50px;
- 
+  line-height: 50px;
 }
-.sign:hover{
-  font-weight: bold;
-  color:#FF8882;
+.log:hover {
+  color: #307caf;
+}
+
+.sign {
+  padding-top: 10px;
+
+  color: #ffffff;
+  text-decoration: none;
+  float: right;
+  padding-right: 12px;
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+  line-height: 50px;
+}
+.sign:hover {
+  color: #307caf;
 }
 
 .about {
+  padding-top: 10px;
+
   color: #ffffff;
   text-decoration: none;
   float: right;
@@ -60,15 +65,14 @@ font-weight: bold;
   font-size: 14px;
   text-align: center;
   justify-content: center;
-  line-height:50px;
- 
- 
+  line-height: 50px;
 }
-.about:hover{
-  font-weight: bold;
-  color:#FF8882;
+.about:hover {
+  color: #307caf;
 }
 .contac {
+  padding-top: 10px;
+
   color: #ffffff;
   text-decoration: none;
   float: right;
@@ -76,15 +80,14 @@ font-weight: bold;
   font-size: 14px;
   text-align: center;
   justify-content: center;
-  line-height:50px;
- 
-  
+  line-height: 50px;
 }
-.contac:hover{
-  font-weight: bold;
-  color:#FF8882;
+.contac:hover {
+  color: #307caf;
 }
-.logout_nav{
+.logout_nav {
+  padding-top: 10px;
+
   color: #ffffff;
   text-decoration: none;
   float: right;
@@ -92,57 +95,54 @@ font-weight: bold;
   font-size: 14px;
   text-align: center;
   justify-content: center;
-  line-height:50px;
- 
+  line-height: 50px;
 }
-.logout_nav:hover{
-  font-weight: bold;
-  color:#FF8882;
+.logout_nav:hover {
+  color: #307caf;
 }
 
-.myBooking_nav{
-  color: #ffffff;
-  text-decoration: none;
-  float: right;
-  padding-right: 12px;
-  font-size: 14px;
-  text-align: center;
-  justify-content: center;
-  line-height:50px;
- 
-}
-.myBooking_nav:hover{
-  font-weight: bold;
-  color:#FF8882;
-}
-.home_nav{
-  color: #ffffff;
-  text-decoration: none;
-  float: right;
-  padding-right: 12px;
-  font-size: 14px;
-  text-align: center;
-  justify-content: center;
-  line-height:50px;
- 
-}
-.home_nav:hover{
-  font-weight: bold;
-  color:#FF8882;
-}
-.main-nav{
-  color: #ffffff;
-  text-decoration: none;
-  float: right;
-  padding-right: 12px;
-  font-size: 14px;
-  text-align: center;
-  justify-content: center;
-  line-height:50px;
- 
+.myBooking_nav {
+  padding-top: 10px;
 
+  color: #ffffff;
+  text-decoration: none;
+  float: right;
+  padding-right: 12px;
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+  line-height: 50px;
 }
-.main-nav:hover{
-  font-weight: bold;
-  color:#FF8882;
+.myBooking_nav:hover {
+  color: #307caf;
+}
+.home_nav {
+  padding-top: 10px;
+
+  color: #ffffff;
+  text-decoration: none;
+  float: right;
+  padding-right: 12px;
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+  line-height: 50px;
+}
+.home_nav:hover {
+  color: #307caf;
+}
+.main-nav {
+  padding-top: 10px;
+
+  color: #ffffff;
+  text-decoration: none;
+  float: right;
+  padding-right: 12px;
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+  line-height: 50px;
+}
+.main-nav:hover {
+  color: #307caf;
 }
