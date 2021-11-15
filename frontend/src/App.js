@@ -57,7 +57,9 @@ const App = () => {
             <userSign.Provider
               value={{ email, password, setEmail, setPassword }}
             >
+              
               <Route path={`/signUp`} component={SignUp} />
+            
               <Route path={`/login`} component={Login} />
 
               <Route path={`/logout`} component={logOut} />

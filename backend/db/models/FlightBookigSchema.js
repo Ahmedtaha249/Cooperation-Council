@@ -14,7 +14,8 @@ const FlightBookigSchema = mongoose.Schema({
     required: true,
   },
 
-  adults: { type: Number }//min:1
+  adults: { type: Number },//min:1
+  paid:{type:Boolean,default:false,}
 });
 
 

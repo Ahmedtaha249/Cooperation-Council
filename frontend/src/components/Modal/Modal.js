@@ -19,7 +19,7 @@ const Modal = () => {
         <span
           className="close-modal-btn"
           onClick={() => {
-            history.push(`/main/login`);
+            history.push(`/login`);
           }}
         >
           <CgCloseR
@@ -35,7 +35,7 @@ const Modal = () => {
         <div className="modal-footer">
           <button
             onClick={() => {
-              history.push(`/main/login`);
+              history.push(`/login`);
             }}
             className="btn-cancel"
           >
